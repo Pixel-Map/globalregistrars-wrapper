@@ -1,0 +1,11 @@
+{
+  "description": "Before Ethereum launched, the core dev team considered including an ENS-type name registry system from the genesis block and Gavin Wood, an important co-founder of Ethereum, set about writing it in Jan 2015. Due to complexity, this idea was scrapped for Ethereum's launch on July 30, 2015, but the code for the \"GlobalRegistrar\" remained. Other people deployed it to mainnet 19 times between August 2015 and January 2016, with the 9th version (0x3399...) being hard-coded into geth for a long time. This is a unified wrapper for these ancient name registry contracts.",
+  "name": "yahoo (Version #9)",
+  "attributes": [
+    {
+      "trait_type": "Edition",
+      "value": "9"
+    }
+  ],
+  "image": "https://globalregistrars.io/logo.png"
+}

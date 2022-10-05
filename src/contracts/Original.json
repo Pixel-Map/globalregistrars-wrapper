@@ -1,0 +1,246 @@
+{
+  "abi": [
+    {
+      "name": "name",
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "o_name",
+          "type": "bytes32"
+        }
+      ],
+      "type": "function",
+      "payable": false,
+      "stateMutability": "view"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "bytes32"
+        }
+      ],
+      "name": "owner",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "type": "function",
+      "payable": false,
+      "stateMutability": "view"
+    },
+    {
+      "name": "content",
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "bytes32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "type": "function",
+      "payable": false,
+      "stateMutability": "view"
+    },
+    {
+      "name": "addr",
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "bytes32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "type": "function",
+      "payable": false,
+      "stateMutability": "view"
+    },
+    {
+      "name": "reserve",
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "bytes32"
+        }
+      ],
+      "outputs": [],
+      "type": "function",
+      "payable": true,
+      "stateMutability": "payable"
+    },
+    {
+      "name": "subRegistrar",
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "bytes32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "type": "function",
+      "payable": false,
+      "stateMutability": "view"
+    },
+    {
+      "name": "transfer",
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "bytes32"
+        },
+        {
+          "name": "_newOwner",
+          "type": "address"
+        }
+      ],
+      "outputs": [],
+      "type": "function",
+      "payable": true,
+      "stateMutability": "payable"
+    },
+    {
+      "name": "setSubRegistrar",
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "bytes32"
+        },
+        {
+          "name": "_registrar",
+          "type": "address"
+        }
+      ],
+      "outputs": [],
+      "type": "function",
+      "payable": true,
+      "stateMutability": "payable"
+    },
+    {
+      "name": "Registrar",
+      "constant": false,
+      "inputs": [],
+      "outputs": [],
+      "type": "function",
+      "payable": true,
+      "stateMutability": "payable"
+    },
+    {
+      "name": "setAddress",
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "bytes32"
+        },
+        {
+          "name": "_a",
+          "type": "address"
+        },
+        {
+          "name": "_primary",
+          "type": "bool"
+        }
+      ],
+      "outputs": [],
+      "type": "function",
+      "payable": true,
+      "stateMutability": "payable"
+    },
+    {
+      "name": "setContent",
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "bytes32"
+        },
+        {
+          "name": "_content",
+          "type": "bytes32"
+        }
+      ],
+      "outputs": [],
+      "type": "function",
+      "payable": true,
+      "stateMutability": "payable"
+    },
+    {
+      "name": "disown",
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_name",
+          "type": "bytes32"
+        }
+      ],
+      "outputs": [],
+      "type": "function",
+      "payable": true,
+      "stateMutability": "payable"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "name",
+          "type": "bytes32"
+        }
+      ],
+      "name": "Changed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "name",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "PrimaryChanged",
+      "type": "event"
+    },
+    {
+      "type": "fallback",
+      "payable": true,
+      "stateMutability": "payable"
+    }
+  ]
+}
